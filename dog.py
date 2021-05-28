@@ -4,6 +4,6 @@ class Dog:
         self.color = color
         self.size = size
     def bark(self):
-        return f"{self.name}, the dog, who is {self.color} in color is {self.size} in size but has a {self.bark} bark."
+        return f"{self.name}, the dog, is color {self.color} and very {self.size} in size."
     def whine(self):
-        return f"{self.name}, the dog, who is {self.color} in color, is {self.size} in size but likes to {self.whine} in a sad voice."
+        return f"{self.name}, the dog, is color {self.color} and very {self.size} in size."
