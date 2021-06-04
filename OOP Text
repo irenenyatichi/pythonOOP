@@ -1,0 +1,19 @@
+OBJECT ORIENTED PROGRAMMING
+Refers to structuring programs in objects and have attributes nd behaviour.Objects have attributes unique characteristics and behaviors that are its actions
+Objects are created using a class. A class has attributes and methods. The syntax is class Student. class AkiraChix folowed by a colon, indentation and school= "AkiraChix"
+class Student:
+...     school = "AkiraChix"
+... 
+student=Student()=INstatiation
+>>> student.school
+'AkiraChix'
+The above is for shahred attributes
+Lines of cod esaved in a py file is known asa module
+RULES:
+To create a class use the class keyword
+Start the class name with a capital letter if the classs name has +1 capitalize each word
+!Spaces in a class name
+WHen you save the code in  a py file it is called a module
+To import a class from a module use dot notation fro, module import className
+Many modules together in a directory is known as packages
+
