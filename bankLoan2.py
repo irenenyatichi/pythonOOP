@@ -1,5 +1,4 @@
-from datetime import datetime, time
-
+from datetime import datetime
 class Account:
     def __init__ (self,name,phone,transactions):
         self.phone = phone
@@ -16,7 +15,7 @@ class Account:
             self.balance+=amount
             transaction = {"amount":amount,"balance":self.balance,"time":datetime.now(),"narration":"Deposit"}
             self.transactions.append(transaction)
-            return f"Dear {self.name} you made the following transaction{self.transactions}"
+            # return f"Dear {self.name} you made the following transaction{self.transactions}"
 
     def show_balance(self):
         return self.balance
