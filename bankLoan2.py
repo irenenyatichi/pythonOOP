@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, time
 
 class Account:
     def __init__ (self,name,phone,transactions):
@@ -35,3 +35,11 @@ class Account:
             return f"Dear {self.name}, you have borrowed KES{amount}.Your loan is KES{self.loan}, your balance is KES{self.balance}"
         else:
             return f"Your loan request of KES{amount} is unsuccessful because your loan limit is KES{self.loan_limit}"
+    
+    def get_statement(self):
+        for transaction in self.transactions:
+            narration = transaction["narration"]
+            amount = transaction["amount"]
+            balance = transaction["balance"]
+            time = transaction["time"]
+            print(f"{time.strftime('%D')} {narration} an amount of {amount}. Your balance is {balance}")
